@@ -43,7 +43,7 @@ def check_requests_and_methods():
                 print("Server says '\Wrong method provided'\ when %s = %s" %(method1, method2))
 
             elif method1 != method2 and response_text_from_server == '{"success":"!"}':
-                print("Server says '\Success'\ when first method is %s and second method is %s" %(method1, method2))
+                print("Server says 'Success' when first method is %s and second method is %s" %(method1, method2))
 
             index2 += 1
         index1 += 1

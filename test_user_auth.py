@@ -53,7 +53,7 @@ class TestUserAuth:
                                      cookies={"auth_sid" : self.auth_sid}
             )
 
-        assert "user_id" in self.response2.json(), "There's no user id in second response"
+        assert "user_id" in response2.json(), "There's no user id in second response"
         user_id_from_check_method = response2.json()["user_id"]
                                                 #если пользователь все равно был авторизован не смотря на условие
         assert user_id_from_check_method == 0, f"User is authorized with condition {condition}"
